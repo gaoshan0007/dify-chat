@@ -4,12 +4,9 @@
 	"version": "0.2.0",
 	"scripts": {
 		"build:pkgs": "pnpm --filter @dify-chat/* build",
-		"build": "pnpm build:pkgs && pnpm --filter dify-chat-app-react build",
-		"dev": "pnpm --filter dify-chat-app-react dev",
-		"dev:next": "cd packages/nextjs-app && pnpm dev",
+		"build": "pnpm build:pkgs",
 		"format": "prettier --write .",
 		"lint": "eslint .",
-		"preview": "pnpm --filter dify-chat-app-react preview",
 		"prepare": "husky"
 	},
 	"devDependencies": {
@@ -18,8 +15,6 @@
 		"@eslint/js": "catalog:",
 		"@trivago/prettier-plugin-sort-imports": "catalog:",
 		"eslint": "catalog:",
-		"eslint-plugin-react": "catalog:",
-		"eslint-plugin-react-hooks": "catalog:",
 		"globals": "catalog:",
 		"husky": "catalog:",
 		"lint-staged": "catalog:",
